@@ -13,7 +13,31 @@ body {}
 
 /* TEMPORARY CSS pour m'assurer que le "linking" entre HTML et CSS fonctionne */
 p.test {color: red;}
-p#my_css_test { 
+p#my_css_test {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+
+footer {
+  background: #003049;
+  padding: 20px 40px;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+}
+
+.footer_nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+}
+
+.footer_nav a:hover {
+  color: white;
+}
+

@@ -1,0 +1,19 @@
+/*
+ * NOTES DE LAURENT
+ * TODO en priorité 1
+ * - Largeur de page (Laurent)
+ * - Grille CSS (Laurent)
+ * - Définition des variables CSS (Laurent)
+ * - Choix des couleurs (Panaki)
+ * - 
+ */
+
+/* General styling (font-size, font-family, content width etc)*/
+body {}
+
+/* TEMPORARY CSS pour m'assurer que le "linking" entre HTML et CSS fonctionne */
+p.test {color: red;}
+p#my_css_test { 
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}

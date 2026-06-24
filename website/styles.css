@@ -130,6 +130,10 @@ nav li a:hover {
 /* =====  CONTENT ELEMENTS: Box sizing and styling ===== */
 .insider_note {}
 
+#activities img {
+  width: 10rem;
+}
+
 /* ==========  FOOTER: Box styling + Content management and styling ========== */
 
 

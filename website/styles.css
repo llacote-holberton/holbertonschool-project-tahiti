@@ -35,6 +35,8 @@ header {
   display: grid;
   grid-template-columns: subgrid;
   align-items: center;
+  background-color: var(--color_primary);
+  padding: 12px 32px;
 }
 
 main {
@@ -55,6 +57,7 @@ footer {
 img.header.logo {
   grid-column: 1 / 2;
   width: 10rem;
+  border-radius: 12px;
 }
 
 nav {
@@ -68,6 +71,17 @@ nav ul {
     margin: 0;
     padding: 0;
     gap: 2rem; /* espace entre les éléments */
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav li a:hover {
+  color: var(--color_logo);
 }
 
 /* ===== MAIN: Box styling + Content management and styling ========== */

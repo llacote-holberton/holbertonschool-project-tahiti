@@ -89,7 +89,21 @@ nav li a:hover {
   color: var(--color_logo);
 }
 
-/* ========== HERO ========== */
+/* ===== Titre dans le header (pages internes) ===== */
+.header_title h1 {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0 0 4px 0;
+}
+
+.header_title .hero_subtitle {
+  color: var(--color_logo);
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* ========== HERO (Panaki) ========== */
 .hero {
   min-height: 400px;
   background:
@@ -148,7 +162,7 @@ nav li a:hover {
   transform: translateY(-2px);
 }
 
-/* ========== SECTION COMMUNE ========== */
+/* ========== SECTIONS COMMUNES ========== */
 .section {
   padding: 80px 120px;
   text-align: center;
@@ -167,7 +181,16 @@ nav li a:hover {
   margin: 0 0 48px 0;
 }
 
-/* ========== CARTES SERVICES ========== */
+/* ===== Insider note (Laurent — pages de contenu) ===== */
+.insider_note {
+  border-left: 3px solid var(--color_logo);
+  padding: 12px 20px;
+  background: rgba(33, 210, 203, 0.06);
+  font-style: italic;
+  color: rgba(0,0,0,0.6);
+}
+
+/* ========== CARTES SERVICES (Panaki) ========== */
 .services_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

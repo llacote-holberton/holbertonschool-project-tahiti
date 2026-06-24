@@ -1,23 +1,15 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <!-- For now per simplicity styles file is in the same folder as all pages -->
-    <!-- Even though ideally it would be in its own "css" subfolder aside the "pages" one -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahiti — Paradis polynésien</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
-      <!-- "Combination of classes instead of header_logo" seems more maintainable but maybe wrong idea. -->
-      <!-- NOTE: src is given a symbolink link so we can easily replace the logo with another color or completely change
-            without needing to update manually all html pages using it. -->
-      <img class="header logo" src="website_logo.png">
-      <div class="header_right">
-        <div class="header_title">
-          <h1>Découvrez la magie de la Polynésie française</h1>
-          <p class="hero_subtitle">Plongez au cœur d'un paradis naturel unique au monde</p>
-        </div>
+      <div class="header_top">
+        <img class="header_logo" src="website_logo.png" alt="Logo Tahiti">
         <nav>
           <ul>
             <li><a href="accueil.html">Accueil</a></li>
@@ -28,54 +20,23 @@
           </ul>
         </nav>
       </div>
+      <div class="header_hero">
+        <h1>Découvrez la magie de la Polynésie française</h1>
+        <p class="hero_subtitle">Plongez au cœur d'un paradis naturel unique au monde</p>
+      </div>
     </header>
     <main>
       <article>
-        FIXME MAIN CONTENT HERE
       </article>
-      <aside>FIXME voir si on a ou non l'intérêt d'un aside</aside>
     </main>
     <footer>
-      <div class="footer_content">
-        <div class="footer_brand">
-          <span class="footer_logo">Tahiti</span>
-          <p>Votre passeport vers le paradis polynésien</p>
-        </div>
-
-        <div class="footer_links">
-          <div class="footer_column">
-            <h4>À propos de nous</h4>
-            <ul>
-              <li><a href="#">Notre histoire</a></li>
-              <li><a href="#">L'équipe</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer_column">
-            <h4>Mentions légales</h4>
-            <ul>
-              <li><a href="#">Mentions légales</a></li>
-              <li><a href="#">Confidentialité</a></li>
-              <li><a href="#">CGU</a></li>
-            </ul>
-          </div>
-
-          <div class="footer_column">
-            <h4>Réseaux sociaux</h4>
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
       <div class="footer_bottom">
         <span>© 2026 Tahiti — Tous droits réservés</span>
+        <nav class="footer_nav">
+          <a href="a-propos.html">À propos de nous</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="#">Réseaux sociaux</a>
+        </nav>
       </div>
     </footer>
   </body>

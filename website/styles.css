@@ -73,7 +73,20 @@ nav ul {
     gap: 2rem; /* espace entre les éléments */
 }
 
+nav li {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+nav li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color_logo);
+}
+
 nav li a {
+  display: block;
+  padding: 6px 14px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.95rem;

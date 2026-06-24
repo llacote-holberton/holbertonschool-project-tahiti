@@ -11,8 +11,10 @@
 /* ========== CSS VARIABLES (for colors mainly) ========== */
 :root {
 --color_logo: #21d2cb; /* couleur du logo, calée là au cas où on voudrait la réutiliser */
---color_primary: #0c4f4c; /* couleur "principale", utilisée pour les niveaux de titre */
---color_secondary: #cbbd93; /* couleur "sable" */
+--color_text: #083344;
+--color_primary: #006D77; /* couleur "principale", utilisée pour les niveaux de titre */
+--color_primary__dark: #083344;
+--color_secondary: #F6F2E8; /* couleur "sable" */
 }
 
 /* ========== PAGE STRUCTURE (Box sizing and placement ) ========== */
@@ -34,7 +36,9 @@ header {
    */
   display: grid;
   grid-template-columns: subgrid;
+  grid-template-rows: repeat (2, 1fr);
   align-items: center;
+  background-color: var(--color_logo);
 }
 
 main {
@@ -57,6 +61,14 @@ img.header.logo {
   width: 10rem;
 }
 
+.wrapper.title.nav { grid-column: 2 / 6; }
+
+header h1 { 
+  color: var(--color_secondary); 
+  font-size: 2.5rem;
+}
+
+
 nav {
   grid-column: 2 / 5;
 }
@@ -70,10 +82,15 @@ nav ul {
     gap: 2rem; /* espace entre les éléments */
 }
 
+nav ul a {
+   color: white;
+   text-decoration: none;
+}
+
 /* ===== MAIN: Box styling + Content management and styling ========== */
 
 /* ===== HEADERS: Styling ===== */
-h1 { color: var(--color_primary); }
+h2, h3, h4 { color: var(--color_text); }
 
 /* ===== ARTICLE: Box styling + Content management and styling ===== */
 

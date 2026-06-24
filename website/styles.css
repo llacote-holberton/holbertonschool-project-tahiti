@@ -8,12 +8,201 @@
  * - 
  */
 
-/* General styling (font-size, font-family, content width etc)*/
-body {}
-
-/* TEMPORARY CSS pour m'assurer que le "linking" entre HTML et CSS fonctionne */
-p.test {color: red;}
-p#my_css_test { 
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+/* ========== CSS VARIABLES (for colors mainly) ========== */
+:root {
+--color_logo: #21d2cb; /* couleur du logo, calée là au cas où on voudrait la réutiliser */
+--color_primary: #0c4f4c; /* couleur "principale", utilisée pour les niveaux de titre */
+--color_secondary: #cbbd93; /* couleur "sable" */
 }
+
+/* ========== PAGE STRUCTURE (Box sizing and placement ) ========== */
+/* General styling (font-size, font-family, content width etc)*/
+body {
+  margin: 0;
+  /* Grid definition*/
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Auto-division en 5 colonnes de taille égale sur l'espace restant */
+  grid-template-rows: auto 1fr auto; /* 200px initially now auto for header and footer */
+}
+
+header {
+  /* Error-prone and not strictly required*/
+  /* grid-area: 1 / 1 / 2 / -1; */
+  grid-column: 1 / -1;
+  /* On utilise les deux propriétés ci-dessous pour faire du header une "sous-grille" comme ça on peut
+   * directement utiliser les colonnes définies par la "grille principale" pour caler les éléments.
+   */
+  display: grid;
+  grid-template-columns: subgrid;
+  align-items: center;
+  background: linear-gradient(135deg, #0a3d3a, var(--color_primary));
+  padding: 12px 32px 12px 12px;
+}
+
+main {
+  /* grid-area: 2 / 1 / 3 / -1; */
+  grid-column: 1 / -1;
+}
+
+article {}
+
+footer {
+  grid-column: 1 / -1;
+}
+
+/* ===============  BODY STYLING  =============== */
+
+
+/* ==========  HEADER: Box styling + Content management and styling ========== */
+img.header.logo {
+  grid-column: 1 / 2;
+  width: 10rem;
+  border-radius: 12px;
+  margin-right: 2rem;
+}
+
+.header_right {
+  grid-column: 2 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem; /* espace entre les éléments */
+}
+
+nav li {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+nav li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color_logo);
+}
+
+nav li a {
+  display: block;
+  padding: 4px 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.8rem;
+  transition: color 0.2s;
+}
+
+nav li a:hover {
+  color: var(--color_logo);
+}
+
+/* ===== MAIN: Box styling + Content management and styling ========== */
+
+/* ===== HEADERS: Styling ===== */
+.header_title h1 {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0 0 4px 0;
+}
+
+.header_title .hero_subtitle {
+  color: var(--color_logo);
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* ===== ARTICLE: Box styling + Content management and styling ===== */
+
+
+/* =====  ASIDE: Box styling + Content management and styling ===== */
+
+
+/* ==========  FOOTER: Box styling + Content management and styling ========== */
+
+
+footer {
+  background: #003049;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 48px 60px 24px;
+  margin-top: 80px;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer_brand {
+  max-width: 220px;
+}
+
+.footer_logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer_brand p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.footer_links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer_column h4 {
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer_column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_column a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.footer_column a:hover {
+  color: var(--color_logo);
+}
+
+footer hr {
+  border: none;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 20px;
+}
+
+.footer_bottom {
+  font-size: 0.82rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.35);
+}
+

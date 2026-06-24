@@ -32,6 +32,8 @@ body {
 
 main { width: 95%; margin: 0 auto; }
 main > * { background-color: #ffffff; }
+
+main:not(:has(.hero)) { padding-top: 68px; }
 h2, h3, h4, p, span { color: var(--color_text); margin: 10px; }
 
 .section_light { background-color: #eef8f7 !important; }

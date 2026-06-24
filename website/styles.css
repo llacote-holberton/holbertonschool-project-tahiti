@@ -1177,29 +1177,16 @@ img.focused {
   margin: 0 auto;
 }
 
-.apropos_teaser_photos {
-  display: flex;
-  gap: -16px;
+.apropos_teaser_photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 16px;
   flex-shrink: 0;
-}
-
-.apropos_teaser_avatar {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 3px solid white;
   background: linear-gradient(135deg, var(--color_primary), var(--color_logo));
-  margin-left: -16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
   background-size: cover;
   background-position: center;
 }
-
-.apropos_teaser_avatar:first-child { margin-left: 0; }
-
-#avatar_panaki  { background: linear-gradient(135deg, #0c4f4c, #21d2cb); }
-#avatar_laurent { background: linear-gradient(135deg, #003049, #0c4f4c); }
 
 .apropos_teaser_tag {
   display: inline-block;

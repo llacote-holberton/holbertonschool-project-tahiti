@@ -27,12 +27,16 @@ body {
   font-family: Georgia, 'Times New Roman', serif;
   color: var(--color_text);
   scroll-behavior: smooth;
-  background-color: var(--color_secondary)
+  background-color: var(--color_primary);
 }
 
 main { width: 95%; margin: 0 auto; }
-main > * { background-color: var(--color_light); }
-h2, h3, h4, p, span {color: var(--color_text); margin: 10px; }
+main > * { background-color: #ffffff; }
+h2, h3, h4, p, span { color: var(--color_text); margin: 10px; }
+
+.section_light { background-color: #eef8f7 !important; }
+.section_sand  { background-color: #fdf8f0 !important; }
+.section_dark  { background-color: var(--color_dark) !important; }
 
 /* ========== HEADER ========== */
 header {
@@ -174,6 +178,7 @@ nav li a:hover {
 .section {
   padding: 80px 120px;
   text-align: center;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
 }
 
 .section h2 {
@@ -360,8 +365,8 @@ nav li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--color_primary);
-  color: white;
+  background: rgba(33, 210, 203, 0.15);
+  color: var(--color_primary);
   border-radius: 10px;
   padding: 10px 14px;
   flex-shrink: 0;
@@ -373,19 +378,20 @@ nav li a:hover {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .agenda_jour {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1;
+  color: var(--color_primary);
 }
 
 .agenda_tag {
   display: inline-block;
-  background: rgba(33,210,203,0.12);
-  color: var(--color_primary);
+  background: rgba(203, 189, 147, 0.3);
+  color: #7a6a3a;
   font-family: Arial, sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
@@ -784,6 +790,18 @@ footer {
   transform: rotate(360deg);
 }
 
+
+/* ========== SCROLL ANIMATIONS ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* ===== CONTENT COMPONENTS ===== */
 .gallery {

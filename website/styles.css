@@ -237,6 +237,467 @@ nav li a:hover {
   margin: 0;
 }
 
+/* ========== AVIS SUR DES LIEUX ========== */
+.avis_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.avis_card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.avis_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.avis_photo_placeholder {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(12,79,76,0.1), rgba(33,210,203,0.15));
+  border-bottom: 2px dashed rgba(12,79,76,0.15);
+}
+
+.avis_photo_placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avis_content {
+  padding: 20px;
+  text-align: left;
+}
+
+.avis_lieu {
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color_logo);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.avis_texte {
+  color: rgba(0,0,0,0.65);
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 10px 0 16px;
+}
+
+.avis_auteur {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avis_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(12,79,76,0.1);
+  border: 2px dashed rgba(12,79,76,0.2);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avis_avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avis_auteur strong {
+  display: block;
+  color: var(--color_primary);
+  font-size: 0.88rem;
+}
+
+.avis_etoiles {
+  color: #f5a623;
+  font-size: 0.85rem;
+}
+
+/* ========== AGENDA / ÉVÉNEMENTS ========== */
+.agenda_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.agenda_card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: white;
+  border: 1px solid rgba(12,79,76,0.1);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: left;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.agenda_card:hover {
+  box-shadow: 0 8px 24px rgba(12,79,76,0.1);
+  transform: translateY(-3px);
+}
+
+.agenda_date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color_primary);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 14px;
+  flex-shrink: 0;
+  min-width: 52px;
+}
+
+.agenda_mois {
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
+.agenda_jour {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.agenda_tag {
+  display: inline-block;
+  background: rgba(33,210,203,0.12);
+  color: var(--color_primary);
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.agenda_info h3 {
+  color: var(--color_primary);
+  font-size: 0.98rem;
+  margin: 0 0 8px 0;
+}
+
+.agenda_info p {
+  color: rgba(0,0,0,0.55);
+  font-size: 0.84rem;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.agenda_lien {
+  color: var(--color_logo);
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.agenda_lien:hover {
+  opacity: 0.7;
+}
+
+/* ========== PAGE DÉCOUVRIR ========== */
+.decouvrir_hero {
+  background:
+    linear-gradient(to bottom, rgba(0,20,40,0.3) 0%, rgba(0,40,80,0.7) 100%),
+    url('images/decouvrir/hero.jpg') center / cover no-repeat,
+    linear-gradient(180deg, #003d5b, #006994);
+}
+
+nav li a.nav_active {
+  color: var(--color_logo);
+  border-color: var(--color_logo);
+}
+
+/* Intro */
+.intro_content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.intro_img_placeholder {
+  flex: 1;
+  min-height: 280px;
+  border-radius: 16px;
+  background: rgba(12,79,76,0.08);
+  border: 2px dashed rgba(12,79,76,0.2);
+}
+
+.intro_text_block {
+  flex: 1;
+}
+
+.intro_text_block p {
+  color: rgba(0,0,0,0.65);
+  line-height: 1.9;
+  margin: 0 0 16px 0;
+}
+
+/* Faune & Flore */
+.fauna_category {
+  color: var(--color_primary);
+  font-size: 1.2rem;
+  margin: 48px 0 24px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(12,79,76,0.1);
+  text-align: left;
+}
+
+.fauna_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.fauna_card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.fauna_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+
+.fauna_img_placeholder {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, rgba(0,105,148,0.15), rgba(33,210,203,0.15));
+  border-bottom: 2px dashed rgba(12,79,76,0.15);
+}
+
+.fauna_info {
+  padding: 16px;
+  text-align: left;
+}
+
+.fauna_info h4 {
+  color: var(--color_primary);
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+}
+
+.fauna_latin {
+  color: rgba(0,0,0,0.35);
+  font-style: italic;
+  font-size: 0.8rem;
+  margin: 0 0 10px 0;
+}
+
+.fauna_info p {
+  color: rgba(0,0,0,0.6);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.fauna_tag {
+  display: inline-block;
+  background: rgba(33,210,203,0.12);
+  color: var(--color_primary);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+/* Activités */
+.activites_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.activite_card {
+  border: 1px solid rgba(12,79,76,0.12);
+  border-radius: 14px;
+  padding: 28px 22px;
+  background: white;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.activite_card:hover {
+  box-shadow: 0 8px 24px rgba(12,79,76,0.12);
+  transform: translateY(-4px);
+}
+
+.activite_icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.activite_card h3 {
+  color: var(--color_primary);
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
+
+.activite_card > p {
+  color: rgba(0,0,0,0.6);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.activite_details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.activite_details li {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--color_primary);
+  padding-left: 16px;
+  position: relative;
+}
+
+.activite_details li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color_logo);
+  font-weight: bold;
+}
+
+/* Planifier */
+.planifier_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.planifier_card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 28px 22px;
+  transition: background 0.2s;
+}
+
+.planifier_card:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.planifier_icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.planifier_card h3 {
+  color: white;
+  font-size: 1rem;
+  margin: 0 0 14px 0;
+}
+
+.planifier_card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.planifier_card li {
+  color: rgba(255,255,255,0.7);
+  font-family: Arial, sans-serif;
+  font-size: 0.84rem;
+  padding-left: 14px;
+  position: relative;
+}
+
+.planifier_card li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color_logo);
+}
+
+.planifier_card a {
+  color: var(--color_logo);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.planifier_card a:hover {
+  opacity: 0.75;
+}
+
+/* Insider's note */
+.insider_section {
+  background: var(--color_light);
+}
+
+.insider_note_block {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  background: white;
+  border-left: 4px solid var(--color_logo);
+  border-radius: 0 14px 14px 0;
+  padding: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+.insider_emoji {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.insider_note_block h3 {
+  color: var(--color_primary);
+  margin: 0 0 10px 0;
+}
+
+.insider_note_block p {
+  color: rgba(0,0,0,0.65);
+  line-height: 1.8;
+  margin: 0;
+  font-style: italic;
+}
+
 /* ========== FOOTER ========== */
 footer {
   background: var(--color_dark);

@@ -733,7 +733,7 @@ nav li a.nav_active {
 /* ========== FOOTER ========== */
 footer {
   background: var(--color_dark);
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.85);
   padding: 24px 60px;
 }
 
@@ -745,6 +745,10 @@ footer {
   font-family: Arial, sans-serif;
 }
 
+.footer_bottom > span {
+  color: var(--color_secondary);
+}
+
 .footer_nav {
   display: flex;
   gap: 24px;
@@ -752,7 +756,7 @@ footer {
 
 .footer_nav a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   transition: color 0.2s;
 }
 
@@ -764,7 +768,7 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-family: Arial, sans-serif;
   font-size: 0.85rem;

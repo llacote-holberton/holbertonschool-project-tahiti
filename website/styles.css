@@ -266,3 +266,35 @@ footer {
 .footer_nav a:hover {
   color: var(--color_logo);
 }
+
+.github_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.github_link:hover {
+  color: white;
+  border-color: var(--color_logo);
+  background: rgba(33, 210, 203, 0.1);
+  transform: translateY(-2px);
+}
+
+.github_icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  transition: transform 0.3s;
+}
+
+.github_link:hover .github_icon {
+  transform: rotate(360deg);
+}

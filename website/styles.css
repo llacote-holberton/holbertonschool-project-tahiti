@@ -808,4 +808,11 @@ footer {
   justify-content: center;
 }
 
+img.focused {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  border-radius: 50px;
+}
 /* ===== PAGE SPECIFIC RULES ===== */

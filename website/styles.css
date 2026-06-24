@@ -8,6 +8,12 @@
  * - 
  */
 
+/* ========== CSS VARIABLES (for colors mainly) ========== */
+:root {
+--color_logo: #21d2cb; /* couleur du logo, calée là au cas où on voudrait la réutiliser */
+--color_primary: #0c4f4c; /* couleur "principale", utilisée pour les niveaux de titre */
+--color_secondary: #cbbd93; /* couleur "sable" */
+}
 
 /* ========== PAGE STRUCTURE (Box sizing and placement ) ========== */
 /* General styling (font-size, font-family, content width etc)*/
@@ -66,6 +72,8 @@ nav ul {
 
 /* ===== MAIN: Box styling + Content management and styling ========== */
 
+/* ===== HEADERS: Styling ===== */
+h1 { color: var(--color_primary); }
 
 /* ===== ARTICLE: Box styling + Content management and styling ===== */
 

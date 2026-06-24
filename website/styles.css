@@ -8,17 +8,56 @@
  * - 
  */
 
+
+/* ========== PAGE STRUCTURE (Box sizing and placement ) ========== */
 /* General styling (font-size, font-family, content width etc)*/
 body {
   margin: 0;
+  /* Grid definition*/
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Auto-division en 5 colonnes de taille égale sur l'espace restant */
+  grid-template-rows: auto 1fr auto; /* 200px initially now auto for header and footer */
 }
 
-/* TEMPORARY CSS pour m'assurer que le "linking" entre HTML et CSS fonctionne */
-p.test {color: red;}
-p#my_css_test {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+header {
+  /* Error-prone and not strictly required*/
+  /* grid-area: 1 / 1 / 2 / -1; */
+  grid-column: 1 / -1;
+  /* On utilise les deux propriétés ci-dessous pour faire du header une "sous-grille" comme ça on peut
+   * directement utiliser les colonnes définies par la "grille principale" pour caler les éléments.
+   */
+  display: grid;
+  grid-template-columns: subgrid;
 }
+
+main {
+  /* grid-area: 2 / 1 / 3 / -1; */
+  grid-column: 1 / -1;
+}
+
+article {}
+
+footer {
+  grid-column: 1 / -1;
+}
+
+/* ===============  BODY STYLING  =============== */
+
+
+/* ==========  HEADER: Box styling + Content management and styling ========== */
+
+
+/* ===== MAIN: Box styling + Content management and styling ========== */
+
+
+/* ===== ARTICLE: Box styling + Content management and styling ===== */
+
+
+/* =====  ASIDE: Box styling + Content management and styling ===== */
+
+
+/* ==========  FOOTER: Box styling + Content management and styling ========== */
+
 
 footer {
   background: #003049;

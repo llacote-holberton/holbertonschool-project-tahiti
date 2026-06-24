@@ -1013,4 +1013,235 @@ img.focused {
   width: 1000px;
   border-radius: 50px;
 }
+/* ========== PAGE À PROPOS ========== */
+.apropos_hero {
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.6) 100%),
+    url('images/header-bg.jpg') center / cover no-repeat,
+    linear-gradient(135deg, #0a3d3a, var(--color_primary));
+}
+
+.apropos_intro_img {
+  flex: 1;
+  min-height: 280px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--color_primary), var(--color_logo));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  flex-shrink: 0;
+}
+
+.apropos_intro_img::after {
+  content: "🏫";
+}
+
+.apropos_team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.apropos_card {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.apropos_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.11);
+}
+
+.apropos_avatar_large {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--color_primary), var(--color_logo));
+}
+
+.apropos_card_info h3 {
+  color: var(--color_primary);
+  font-size: 1.2rem;
+  margin: 0 0 4px 0;
+}
+
+.apropos_role {
+  display: inline-block;
+  background: rgba(33,210,203,0.12);
+  color: var(--color_primary);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.apropos_card_info p {
+  color: rgba(0,0,0,0.6);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+}
+
+.apropos_links {
+  display: flex;
+  gap: 10px;
+}
+
+.apropos_github {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color_primary);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid rgba(12,79,76,0.25);
+  padding: 5px 12px;
+  border-radius: 20px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.apropos_github:hover {
+  background: rgba(12,79,76,0.06);
+  border-color: var(--color_logo);
+}
+
+.apropos_github svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.apropos_tech_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.apropos_tech_card {
+  background: white;
+  border: 1px solid rgba(12,79,76,0.1);
+  border-radius: 14px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.apropos_tech_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(12,79,76,0.1);
+  border-color: var(--color_logo);
+}
+
+.apropos_tech_icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.apropos_tech_card h3 {
+  color: var(--color_primary);
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
+
+.apropos_tech_card p {
+  color: rgba(0,0,0,0.55);
+  font-size: 0.84rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========== TEASER À PROPOS (homepage) ========== */
+.apropos_teaser_inner {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.apropos_teaser_photos {
+  display: flex;
+  gap: -16px;
+  flex-shrink: 0;
+}
+
+.apropos_teaser_avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background: linear-gradient(135deg, var(--color_primary), var(--color_logo));
+  margin-left: -16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.apropos_teaser_avatar:first-child { margin-left: 0; }
+
+#avatar_panaki  { background: linear-gradient(135deg, #0c4f4c, #21d2cb); }
+#avatar_laurent { background: linear-gradient(135deg, #003049, #0c4f4c); }
+
+.apropos_teaser_tag {
+  display: inline-block;
+  background: rgba(33,210,203,0.12);
+  color: var(--color_primary);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.apropos_teaser h2 {
+  color: var(--color_primary);
+  font-size: 1.6rem;
+  margin: 0 0 12px 0;
+}
+
+.apropos_teaser p {
+  color: rgba(0,0,0,0.6);
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin: 0 0 20px 0;
+}
+
+.apropos_teaser_btn {
+  display: inline-block;
+  color: var(--color_primary);
+  font-family: Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color_logo);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.apropos_teaser_btn:hover {
+  color: var(--color_logo);
+}
+
 /* ===== PAGE SPECIFIC RULES ===== */

@@ -451,10 +451,184 @@ nav li a:hover {
 
 /* ========== PAGE DÉCOUVRIR ========== */
 .decouvrir_hero {
+  min-height: 520px;
   background:
-    linear-gradient(to bottom, rgba(0,20,40,0.3) 0%, rgba(0,40,80,0.7) 100%),
-    url('images/decouvrir/hero.jpg') center / cover no-repeat,
-    linear-gradient(180deg, #003d5b, #006994);
+    linear-gradient(160deg, rgba(0,30,60,0.55) 0%, rgba(0,80,120,0.45) 100%),
+    url('images/bora-bora-diving-and-swimming.webp') center / cover no-repeat,
+    linear-gradient(160deg, #003d5b 0%, #006994 100%);
+}
+
+.dec_hero_tag {
+  display: inline-block;
+  background: rgba(33,210,203,0.2);
+  color: var(--color_logo);
+  border: 1px solid rgba(33,210,203,0.4);
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* Stats bar */
+.dec_stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--color_primary);
+}
+
+.dec_stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 20px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  gap: 4px;
+}
+
+.dec_stat:last-child { border-right: none; }
+
+.dec_stat_number {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color_logo);
+}
+
+.dec_stat_label {
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Intro image teaser */
+.dec_intro_img {
+  background: url('images/bora-bora-diving-and-swimming.webp') center / cover no-repeat !important;
+  border: none !important;
+  min-height: 320px;
+  border-radius: 16px;
+}
+
+/* Fauna tag variants */
+.fauna_tag_blue  { background: rgba(0,105,148,0.15); color: #006994; }
+.fauna_tag_green { background: rgba(45,106,79,0.15); color: #2d6a4f; }
+.fauna_tag_orange{ background: rgba(231,111,81,0.15); color: #c1551e; }
+.fauna_tag_sand  { background: rgba(203,189,147,0.3); color: #7a6a3a; }
+
+/* Top spots */
+.dec_spots_section { background: var(--color_dark) !important; }
+
+.dec_spots_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.dec_spot_card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: left;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.dec_spot_card:hover {
+  background: rgba(255,255,255,0.09);
+  transform: translateY(-4px);
+}
+
+.dec_spot_rank {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(33,210,203,0.25);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.dec_spot_ile {
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color_logo);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.dec_spot_card h3 {
+  color: white;
+  font-size: 1.15rem;
+  margin: 6px 0 12px 0;
+}
+
+.dec_spot_card p {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+}
+
+.dec_spot_infos {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dec_spot_infos span {
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.06);
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+/* Planifier section */
+.dec_planifier_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.dec_planifier_card {
+  background: white;
+  border-radius: 14px;
+  padding: 28px 22px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dec_planifier_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+}
+
+.dec_planifier_icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.dec_planifier_card h3 {
+  color: var(--color_primary);
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
+
+.dec_planifier_card p {
+  color: rgba(0,0,0,0.6);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin: 0;
 }
 
 nav li a.nav_active {

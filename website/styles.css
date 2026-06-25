@@ -1223,3 +1223,35 @@ img.focused {
 }
 
 /* ===== PAGE SPECIFIC RULES ===== */
+
+/* ===== Page Activités =====*/
+.activity-main {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.activity-text {
+  flex: 1;
+}
+.activity-text p {
+  line-height: 1.6;
+  font-size: 1.1em;
+  text-align: justify;
+  justify-content: center;
+}
+.activity-image {
+  flex: 1;
+}
+.activity-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* Alternance automatique de l'image (gauche / droite) */
+.activity-block:nth-of-type(even) .activity-main {
+  flex-direction: row-reverse;
+}
+

@@ -67,7 +67,7 @@ body {
   font-family: var(--font_serif);
   color: var(--color_text);
   scroll-behavior: smooth;
-  background-color: var(--color_primary);
+  background: linear-gradient(to bottom, var(--color_primary) 0%, var(--color_dark) 100%);
 }
 
 main { width: 95%; margin: 0 auto; }

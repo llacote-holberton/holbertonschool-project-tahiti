@@ -23,6 +23,28 @@
   --header-height: 84px; /* logo 64px + padding 10px × 2 */
 }
 
+/* ========== CLASSES UTILITAIRES ========== */
+.ui_grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 40px;
+}
+.ui_grid_3 { grid-template-columns: repeat(3, 1fr); }
+.ui_grid_4 { grid-template-columns: repeat(4, 1fr); }
+
+.ui_card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.ui_card_interactive:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
 /* ========== RESET & BASE ========== */
 * {
   box-sizing: border-box;
@@ -214,13 +236,14 @@ nav li a:hover {
 }
 
 /* ========== CARTES SERVICES (Panaki) ========== */
+/*
 .services_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin-top: 40px;
 }
-
+*/
 .service_card {
   border: 1px solid rgba(12, 79, 76, 0.15);
   border-radius: 12px;
@@ -258,12 +281,14 @@ nav li a:hover {
 }
 
 /* ========== AVIS SUR DES LIEUX ========== */
+/*
 .avis_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
   margin-top: 40px;
 }
+*/
 
 .avis_card {
   background: white;
@@ -347,12 +372,14 @@ nav li a:hover {
 }
 
 /* ========== AGENDA / ÉVÉNEMENTS ========== */
+/*
 .agenda_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 40px;
 }
+*/
 
 .agenda_card {
   display: flex;
@@ -531,13 +558,6 @@ nav li a:hover {
 /* Top spots */
 .dec_spots_section { background: var(--color_dark) !important; }
 
-.dec_spots_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 40px;
-}
-
 .dec_spot_card {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
@@ -599,13 +619,6 @@ nav li a:hover {
 }
 
 /* Planifier section */
-.dec_planifier_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 40px;
-  text-align: left;
-}
 
 .dec_planifier_card {
   background: white;
@@ -681,12 +694,6 @@ nav li a.nav_active {
   text-align: left;
 }
 
-.fauna_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
 .fauna_card {
   background: white;
   border-radius: 14px;
@@ -744,13 +751,6 @@ nav li a.nav_active {
 }
 
 /* Activités */
-.activites_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 40px;
-  text-align: left;
-}
 
 .activite_card {
   border: 1px solid rgba(12,79,76,0.12);
@@ -810,13 +810,6 @@ nav li a.nav_active {
 }
 
 /* Planifier */
-.planifier_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 40px;
-  text-align: left;
-}
 
 .planifier_card {
   background: rgba(255,255,255,0.06);
@@ -1164,13 +1157,6 @@ img.focused {
   width: 15px;
   height: 15px;
   fill: currentColor;
-}
-
-.apropos_tech_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 40px;
 }
 
 .apropos_tech_card {

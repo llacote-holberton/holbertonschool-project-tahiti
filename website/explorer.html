@@ -22,41 +22,57 @@
     </header>
     <main>
       <article id="explore">
-        <h2>Explorez la beauté paradisiaque de nos contrées</h2>
-        <p class="intro">Que l'on veuille se ressourcer, s'abriter de la chaleur ou simplement découvrir de nouveaux paysages, Tahiti propose des parcours adaptés ! Alors n'hésitez plus à enfiler vos chaussures de randonnée !</p>
 
-        <section class="explore info">
-          <h3>Des sentiers pour tous les aventuriers !</h3>
+        <section class="hero" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%), url('assets/explorer/explorer__vue-panorama.jpg') center / cover no-repeat;">
+          <div class="hero_content">
+            <h1>Explorer Tahiti</h1>
+            <p class="hero_subtitle">Randonnées sauvages et sentiers au cœur d'une nature luxuriante</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Des sentiers pour tous les aventuriers !</h2>
+          <p class="section_subtitle">Que l'on veuille se ressourcer ou s'aventurer, découvrez des parcours adaptés à vos envies</p>
+          
           <p>La riche topographie de Tahiti lui permet d'offrir des tracés variés dans leur intensité comme leur ambiance ! Gravissez les collines pour admirer un panorama à couper le souffle, faites semblant de vous perdre dans une forêt luxuriante, ou promenez vous simplement au bord du sable fin et de l'eau turquoise.</p>
           <p>Nos tracés officiels sont balisés, avec une indication de la difficulté, des pistes de repli et la distance restante avant l'arrivée.</p>
+          
           <div class="gallery">
-            <img src="assets/explorer/explorer__vue-plage-lagon.jpg">
-            <img src="assets/explorer/explorer__vue-panorama.jpg">
-            <img src="assets/explorer/explorer__vue-interieur-foret.jpg">
-            <img src="assets/explorer/explorer__vue-cascade.jpg">
+            <img src="assets/explorer/explorer__vue-plage-lagon.jpg" alt="Plage et lagon">
+            <img src="assets/explorer/explorer__vue-montagne.jpg" alt="Panorama montagneux">
+            <img src="assets/explorer/explorer__vue-interieur-foret.jpg" alt="Forêt tropicale">
+            <img src="assets/explorer/explorer__vue-cascade.jpg" alt="Cascade cachée">
           </div>
         </section>
-        <section class="explore info">
-          <h3>Une fresque aux mille couleurs !</h3>
+
+        <section class="section section_light">
+          <h2>Une fresque aux mille couleurs !</h2>
+          <p class="section_subtitle">À la rencontre d'une faune et d'une flore exceptionnelles</p>
+          
           <p>Avec plus de 1000 espèces de plantes répertoriées, la nature luxuriante de Tahiti vous offre des tableaux chatoyants et fourmillants de détails. Plus de 6000 espèces d'animaux y vivent, vous offrant la perspective de rencontres charmantes au détour d'un écart.</p>
+          
           <div class="gallery">
-            <img src="assets/explorer/explorer__animaux_crabe.jpg">
-            <img src="assets/explorer/explorer__diversite_plantes.jpg">
-            <img src="assets/explorer/explorer__animaux_sanglier.jpg">
+            <img src="assets/explorer/explorer__animaux_crabe.jpg" alt="Petit crabe local">
+            <img src="assets/explorer/explorer__diversite_plantes.jpg" alt="Plantes tropicales">
+            <img src="assets/explorer/explorer__animaux_sanglier.jpg" alt="Faune sauvage">
           </div>
-          <div class="dual_column">
-            <img src="assets/explorer/explorer__fleur.jpg"  width="100px">
-            <p class="insider_note">Le Tiare est LA fleur typique de Tahiti, qui se distingue par une symbolique forte due à l'élégance de sa simplicité et la senteur délicate qu'elle dégage. Outre son identité comme emblème de Tahiti, la Gardenia taitensis de son nom scientifique est utilisée comme plante médicinale, huile de massage ou simplement élément décoratif. Vous la croiserez donc souvent lors de vos pérégrinations.</p>
+          
+          <div class="dual_column" style="display: flex; align-items: center; gap: 32px; text-align: left; margin-top: 40px;">
+            <img src="assets/explorer/explorer__fleur.jpg" alt="Fleur de Tiare" width="120px" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <p class="insider_note" style="margin: 0;">Le Tiare est LA fleur typique de Tahiti, qui se distingue par une symbolique forte due à l'élégance de sa simplicité et la senteur délicate qu'elle dégage. Outre son identité comme emblème de Tahiti, la Gardenia taitensis de son nom scientifique est utilisée comme plante médicinale, huile de massage ou simplement élément décoratif. Vous la croiserez donc souvent lors de vos pérégrinations.</p>
           </div>
         </section>
-        <section class="explore info">
-          <h3>Planifier ses randonnées</h3>
-          <p>De nombreux outils vous permettront d'organiser vos sorties en toute sérénité...</p>
-          <ul>
-            <li><a href="https://www.openrunner.com/">OpenRunner</a>: application listant tous les parcours</li>
-            <li><a href="https://www.ffrandonnee.fr/randonner/conseils/bien-preparer-sa-randonnee">Fédération Française de Randonnée</a> : pour s'assurer de parer à toute éventualité</li>
-          </ul>
+
+        <section class="section section_sand">
+          <h2>Planifier ses randonnées</h2>
+          <p class="section_subtitle">Les outils indispensables pour organiser vos sorties en toute sérénité</p>
+          <div style="display: flex; justify-content: center; gap: 24px; margin-top: 30px;">
+            <a href="https://www.openrunner.com/" target="_blank" style="display: inline-block; padding: 12px 24px; background: white; color: var(--color_primary); border: 1px solid rgba(12,79,76,0.15); border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">OpenRunner (Cartographie)</a>
+            <a href="https://www.ffrandonnee.fr/randonner/conseils/bien-preparer-sa-randonnee" target="_blank" style="display: inline-block; padding: 12px 24px; background: white; color: var(--color_primary); border: 1px solid rgba(12,79,76,0.15); border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">Fédération Française de Randonnée</a>
+            <a href="https://geotrek.fr/" target="_blank" style="display: inline-block; padding: 12px 24px; background: white; color: var(--color_primary); border: 1px solid rgba(12,79,76,0.15); border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">GeoTrek app</a>
+          </div>
         </section>
+
       </article>
     </main>
     <footer>

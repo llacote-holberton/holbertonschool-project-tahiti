@@ -1044,7 +1044,7 @@ img.focused {
 
 .apropos_intro_img {
   flex: 1;
-  min-height: 280px;
+  min-height: 330px;
   border-radius: 16px;
   background: linear-gradient(135deg, var(--color_primary), var(--color_logo));
   display: flex;
@@ -1052,10 +1052,24 @@ img.focused {
   justify-content: center;
   font-size: 5rem;
   flex-shrink: 0;
+  overflow: hidden; /* Masque tout ce qui dépasse du cadre */
+  position: relative; /* Devient le repère pour l'image */
 }
 
+/*
 .apropos_intro_img::after {
   content: "🏫";
+}
+*/
+.apropos_intro_img img 
+{
+  width: 850px;
+  object-fit: cover;
+  object-position: left center;
+  position: absolute;
+  /* On déplace l'image pour cibler la zone souhaitée */
+  top: -350px;  /* Déplace l'image vers le haut */
+  left: -200px; /* Déplace l'image vers la gauche */
 }
 
 .apropos_team {
@@ -1207,6 +1221,14 @@ img.focused {
   box-shadow: 0 8px 28px rgba(0,0,0,0.12);
   background-size: cover;
   background-position: center;
+  overflow: hidden;          /* masque tout ce qui dépasse */
+}
+
+.apropos_teaser_photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* remplit le carré */
+  object-position: center; /* montre la partie gauche */
 }
 
 .apropos_teaser_tag {

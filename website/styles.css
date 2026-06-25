@@ -9,12 +9,17 @@
 
 /* ========== CSS VARIABLES ========== */
 :root {
+  /* COLORS */
   --color_logo:      #21d2cb;
   --color_primary:   #0c4f4c;
   --color_secondary: #cbbd93;
   --color_dark:      #003049;
   --color_light:     #f4f8f8;
   --color_text:      #2c2c2c;
+  /* FONTS */
+  --font_sans: Arial, sans-serif; /* Labels, nav links, buttons */
+  --font_serif: Georgia, 'Times New Roman', serif;
+
   --header-height: 84px; /* logo 64px + padding 10px × 2 */
 }
 
@@ -27,7 +32,7 @@ html                     { scroll-padding-top: var(--header-height); }
 
 body {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: var(--font_serif);
   color: var(--color_text);
   scroll-behavior: smooth;
   background-color: var(--color_primary);
@@ -95,7 +100,7 @@ nav li a {
   padding: 5px 12px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.82rem;
   letter-spacing: 0.03em;
   transition: color 0.2s;
@@ -164,7 +169,7 @@ nav li a:hover {
   padding: 12px 36px;
   background: var(--color_logo);
   color: var(--color_primary);
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -292,7 +297,7 @@ nav li a:hover {
 }
 
 .avis_lieu {
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.78rem;
   font-weight: 700;
   color: var(--color_logo);
@@ -379,7 +384,7 @@ nav li a:hover {
 }
 
 .agenda_mois {
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -397,7 +402,7 @@ nav li a:hover {
   display: inline-block;
   background: rgba(203, 189, 147, 0.3);
   color: #7a6a3a;
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.72rem;
   font-weight: 700;
   padding: 2px 8px;
@@ -422,7 +427,7 @@ nav li a:hover {
 
 .agenda_lien {
   color: var(--color_logo);
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.82rem;
   font-weight: 600;
   text-decoration: none;
@@ -466,7 +471,7 @@ nav li a:hover {
   background: rgba(33,210,203,0.2);
   color: var(--color_logo);
   border: 1px solid rgba(33,210,203,0.4);
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.82rem;
   font-weight: 700;
   padding: 5px 14px;
@@ -502,7 +507,7 @@ nav li a:hover {
 }
 
 .dec_stat_label {
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.78rem;
   color: rgba(255,255,255,0.65);
   text-transform: uppercase;
@@ -557,7 +562,7 @@ nav li a:hover {
 }
 
 .dec_spot_ile {
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--color_logo);
@@ -585,7 +590,7 @@ nav li a:hover {
 }
 
 .dec_spot_infos span {
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.75rem;
   color: rgba(255,255,255,0.45);
   background: rgba(255,255,255,0.06);
@@ -731,7 +736,7 @@ nav li a.nav_active {
   display: inline-block;
   background: rgba(33,210,203,0.12);
   color: var(--color_primary);
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.75rem;
   font-weight: 600;
   padding: 3px 10px;
@@ -789,7 +794,7 @@ nav li a.nav_active {
 }
 
 .activite_details li {
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.8rem;
   color: var(--color_primary);
   padding-left: 16px;
@@ -848,7 +853,7 @@ nav li a.nav_active {
 
 .planifier_card li {
   color: rgba(255,255,255,0.7);
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.84rem;
   padding-left: 14px;
   position: relative;
@@ -937,7 +942,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 0.85rem;
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
 }
 
 .footer_bottom > span {
@@ -965,7 +970,7 @@ footer {
   gap: 6px;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.85rem;
   padding: 4px 10px;
   border: 1px solid rgba(255,255,255,0.15);
@@ -1113,7 +1118,7 @@ img.focused {
   display: inline-block;
   background: rgba(33,210,203,0.12);
   color: var(--color_primary);
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.75rem;
   font-weight: 700;
   padding: 3px 10px;
@@ -1141,7 +1146,7 @@ img.focused {
   gap: 6px;
   color: var(--color_primary);
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.82rem;
   font-weight: 600;
   border: 1px solid rgba(12,79,76,0.25);
@@ -1235,7 +1240,7 @@ img.focused {
   display: inline-block;
   background: rgba(33,210,203,0.12);
   color: var(--color_primary);
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.75rem;
   font-weight: 700;
   padding: 3px 10px;
@@ -1261,7 +1266,7 @@ img.focused {
 .apropos_teaser_btn {
   display: inline-block;
   color: var(--color_primary);
-  font-family: Arial, sans-serif;
+  font-family: var(--font_sans);
   font-size: 0.88rem;
   font-weight: 700;
   text-decoration: none;

@@ -1,0 +1,46 @@
++------------------------------------------------------------------------------------+
+| [LOGO] (Carré) | Menu 1  |  Menu 2 (v)  |  Menu 3  |  Menu 4          | [FR] [EN]  |
+|                |         |- Sous-menu 2a                              | (Drapeaux) |
+|                |         |- Sous-menu 2b                              |            |
++------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+| HEADER (Logo | Menu | Flags)                                                       |
++------------------------------------------------------------------------------------+
+|                                                                                    |
+| [ HERO ] Image Pleine Largeur                                                      |
+| Titre principal H1 accrocheur (ex: Slogan)                                         |
+| Bouton d'action (CTA)                                                              |
+|                                                                                    |
++------------------------------------------------------------------------------------+
+| ZONE PRINCIPALE (Layout avec "Aside")                                              |
+|                                                                                    |
+|  [ ZONE MAIN (2/3 de la largeur) ]        | [ ZONE ASIDE (1/3 de la largeur) ]     |
+|                                           |                                        |
+|  📌 Blocs d'accroche (Grille N x N)       | 💡 Bloc de contact rapide / Actu       |
+|  +---------------+ +---------------+      |                                        |
+|  | Titre bloc    | | Titre bloc    |      | 🔗 Liens utiles ou réseaux             |
+|  | Court texte   | | Court texte   |      |                                        |
+|  +---------------+ +---------------+      |                                        |
+|  | Titre bloc    | | Titre bloc    |      |                                        |
+|  | Court texte   | | Court texte   |      |                                        |
+|  +---------------+ +---------------+      |                                        |
+|                                           |                                        |
+|  📌 Bloc 1/3 Image - 2/3 Texte (Variante G)|                                        |
+|  [ Image (1/3) ]  Titre H2 + Paragraphe   |                                        |
+|                   de texte explicatif     |                                        |
+|                                           |                                        |
+|  📌 Grande Image Centrée                  |                                        |
+|  [============= Image =============]      |                                        |
+|  *Sous-titre ou légende de l'image*       |                                        |
+|                                           |                                        |
++------------------------------------------------------------------------------------+
+| FOOTER (About us | Legal | Socials)                                                |
++------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+
+
+
+
+
+
+

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plongez au coeur d'un univers insoupçonné de poésie et de diversité !">
+    <title>Découvrir — Plongée à Tahiti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/all/favicon.ico">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <header>
+      <img class="header_logo" src="website_logo.png" alt="Logo Tahiti">
+      <nav>
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="explorer.html">Explorer</a></li>
+          <li><a href="profiter.html">Profiter</a></li>
+          <li><a href="decouvrir.html" class="nav_active">Découvrir</a></li>
+          <li><a href="savourer.html">Savourer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+
+        <!-- HERO -->
+        <section class="hero decouvrir_hero">
+          <div class="hero_content">
+            <span class="dec_hero_tag">🤿 Plongée & Snorkeling</span>
+            <h1>Les profondeurs de la Polynésie</h1>
+            <p class="hero_subtitle">Un monde aquatique d'une richesse exceptionnelle vous attend sous la surface</p>
+            <a href="#intro" class="hero_btn">Explorer les fonds</a>
+          </div>
+        </section>
+
+        <!-- STATS -->
+        <div class="dec_stats">
+          <div class="dec_stat">
+            <span class="dec_stat_number">1 000+</span>
+            <span class="dec_stat_label">espèces de poissons</span>
+          </div>
+          <div class="dec_stat">
+            <span class="dec_stat_number">40 m</span>
+            <span class="dec_stat_label">visibilité maximale</span>
+          </div>
+          <div class="dec_stat">
+            <span class="dec_stat_number">28°C</span>
+            <span class="dec_stat_label">température de l'eau</span>
+          </div>
+          <div class="dec_stat">
+            <span class="dec_stat_number">200+</span>
+            <span class="dec_stat_label">espèces de coraux</span>
+          </div>
+        </div>
+
+        <!-- INTRO -->
+        <section id="intro" class="section">
+          <h2>Un écosystème marin unique au monde</h2>
+          <p class="section_subtitle">Tahiti et ses îles abritent l'un des lagons les plus riches du Pacifique Sud</p>
+          <div class="intro_content">
+            <div class="intro_img_placeholder dec_intro_img"></div>
+            <div class="intro_text_block">
+              <p>Les eaux polynésiennes offrent une visibilité exceptionnelle pouvant atteindre 40 mètres. La faune y est extraordinairement diversifiée : plus de 1 000 espèces de poissons, 200 espèces de coraux et des rencontres mythiques avec raies mantas, requins baleines et baleines à bosse vous attendent dans ces eaux turquoise.</p>
+              <p>Que vous soyez plongeur confirmé ou simple snorkeleur, les fonds de Tahiti, Bora Bora, Moorea et Rangiroa vous réservent des expériences inoubliables, accessibles dès quelques mètres de profondeur.</p>
+              <p class="insider_note">💡 <strong>Le bon moment :</strong> La visibilité est maximale de mai à octobre, avec des eaux entre 26 et 29°C. C'est aussi la saison des raies mantas à Bora Bora et des baleines à bosse en juillet.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAUNE & FLORE -->
+        <section class="section section_light">
+          <h2>Faune & Flore marines</h2>
+          <p class="section_subtitle">Les habitants extraordinaires des lagons polynésiens</p>
+
+          <h3 class="fauna_category">🐠 Faune marine</h3>
+          <div class="ui_grid ui_grid_3">
+
+            <div class="ui_card fauna_card">
+              <div class="fauna_img_placeholder" style="background: url('images/requin-pointe-noire.webp') center / cover no-repeat;"></div>
+              <div class="fauna_info">
+                <h4>Requin lagon</h4>
+                <p class="fauna_latin">Carcharhinus melanopterus</p>
+                <p>Espèce emblématique et inoffensive, il patrouille en surface dans les eaux peu profondes. Reconnaissable à ses nageoires bordées de noir.</p>
+                <span class="fauna_tag fauna_tag_blue">Inoffensif</span>
+              </div>
+            </div>
+
+            <div class="ui_card fauna_card">
+              <div class="fauna_img_placeholder" style="background: url('images/raie-manta.webp') center / cover no-repeat;"></div>
+              <div class="fauna_info">
+                <h4>Raie manta</h4>
+                <p class="fauna_latin">Mobula birostris</p>
+                <p>Géante des mers pouvant atteindre 7 m d'envergure. Elle se nourrit de plancton et peut être observée en apnée à Bora Bora.</p>
+                <span class="fauna_tag fauna_tag_green">Protégée</span>
+              </div>
+            </div>
+
+            <div class="ui_card fauna_card">
+              <div class="fauna_img_placeholder" style="background: url('images/napoleon.jpg') center / cover no-repeat;"></div>
+              <div class="fauna_info">
+                <h4>Napoléon</h4>
+                <p class="fauna_latin">Cheilinus undulatus</p>
+                <p>Le plus grand poisson à arêtes du récif, reconnaissable à sa bosse frontale. Curieux et sociable, il approche souvent les plongeurs.</p>
+                <span class="fauna_tag fauna_tag_orange">Vulnérable</span>
+              </div>
+            </div>
+
+            <div class="ui_card fauna_card">
+              <div class="fauna_img_placeholder" style="background: url('images/tortue.jpg') center / cover no-repeat;"></div>
+              <div class="fauna_info">
+                <h4>Tortue verte</h4>
+                <p class="fauna_latin">Chelonia mydas</p>
+                <p>Présente dans toute la Polynésie, elle se laisse approcher avec respect. Se nourrit d'herbiers et de méduses dans les lagons peu profonds.</p>
+                <span class="fauna_tag fauna_tag_green">Protégée</span>
+              </div>
+            </div>
+
+            <div class="ui_card fauna_card">
+              <div class="fauna_img_placeholder" style="background: url('images/dauphin.jpg') center / cover no-repeat;"></div>
+              <div class="fauna_info">
+                <h4>Dauphin commun</h4>
+                <p class="fauna_latin">Delphinus delphis</p>
+                <p>Souvent observé en groupes dans les passes. Il n'est pas rare qu'ils accompagnent les bateaux ou viennent jouer avec les nageurs.</p>
+                <span class="fauna_tag fauna_tag_blue">Fréquent</span>
+              </div>
+            </div>
+
+            <div class="ui_card fauna_card">
+              <div class="fauna_img_placeholder" style="background: url('images/baleine.webp') center / cover no-repeat;"></div>
+              <div class="fauna_info">
+                <h4>Baleine à bosse</h4>
+                <p class="fauna_latin">Megaptera novaeangliae</p>
+                <p>De juillet à octobre, les baleines viennent se reproduire en Polynésie. Nager avec elles est l'une des expériences les plus intenses au monde.</p>
+                <span class="fauna_tag fauna_tag_sand">Juil — Oct</span>
+              </div>
+            </div>
+
+          </div>
+
+          <h3 class="fauna_category">🪸 Récifs & Coraux</h3>
+          <div class="ui_grid ui_grid_3">
+
+            <div class="ui_card fauna_card">
+              <div class="fauna_img_placeholder" style="background: url('images/corail-cerveau.jpg') center / cover no-repeat;"></div>
+              <div class="fauna_info">
+                <h4>Corail cerveau</h4>
+                <p class="fauna_latin">Diploria labyrinthiformis</p>
+                <p>Formant de massives structures sphériques, il est l'un des plus anciens récifs du Pacifique. Sa surface plissée ressemble à celle d'un cerveau.</p>
+                <span class="fauna_tag fauna_tag_orange">Endémique</span>
+              </div>
+            </div>
+
+            <div class="ui_card fauna_card">
+              <div class="fauna_img_placeholder" style="background: url('images/gorgone-eventail.jpg') center / cover no-repeat;"></div>
+              <div class="fauna_info">
+                <h4>Gorgone éventail</h4>
+                <p class="fauna_latin">Gorgonia ventalina</p>
+                <p>Ces coraux en forme d'éventail peuvent atteindre plusieurs mètres. Refuge pour crevettes et poissons-pipeaux, ils sont d'une fragilité extrême.</p>
+                <span class="fauna_tag fauna_tag_orange">Fragile</span>
+              </div>
+            </div>
+
+            <div class="ui_card fauna_card">
+              <div class="fauna_img_placeholder" style="background: url('images/corail-de-feu.jpg') center / cover no-repeat;"></div>
+              <div class="fauna_info">
+                <h4>Corail de feu</h4>
+                <p class="fauna_latin">Millepora alcicornis</p>
+                <p>Malgré son apparence de corail, c'est un hydrozoaire urticant. Son contact provoque une brûlure intense — ne jamais toucher lors des plongées.</p>
+                <span class="fauna_tag fauna_tag_orange">Urticant</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- TOP SPOTS -->
+        <section class="section section_dark dec_spots_section">
+          <h2 style="color:white;">Top spots de plongée</h2>
+          <p class="section_subtitle" style="color:rgba(255,255,255,0.6);">Les sites incontournables pour plonger en Polynésie française</p>
+          <div class="ui_grid ui_grid_3">
+
+            <div class="ui_card dec_spot_card">
+              <div class="dec_spot_rank">01</div>
+              <div class="dec_spot_body">
+                <span class="dec_spot_ile">🏝️ Rangiroa</span>
+                <h3>Passe de Tiputa</h3>
+                <p>La plongée en dérive dans le courant de la passe, entourée de centaines de requins gris, dauphins et barracudas. Un mur de vie vertigineux.</p>
+                <div class="dec_spot_infos">
+                  <span>🌊 5 – 30 m</span>
+                  <span>⭐ Avancé</span>
+                  <span>🦈 Requins gris</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui_card dec_spot_card">
+              <div class="dec_spot_rank">02</div>
+              <div class="dec_spot_body">
+                <span class="dec_spot_ile">🏝️ Bora Bora</span>
+                <h3>Jardin des Raies</h3>
+                <p>Un plateau corallien peu profond où raies léopard et raies mantas se laissent observer. Idéal en snorkeling pour les familles et les débutants.</p>
+                <div class="dec_spot_infos">
+                  <span>🌊 3 – 15 m</span>
+                  <span>⭐ Tous niveaux</span>
+                  <span>🐡 Raies mantas</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui_card dec_spot_card">
+              <div class="dec_spot_rank">03</div>
+              <div class="dec_spot_body">
+                <span class="dec_spot_ile">🏝️ Moorea</span>
+                <h3>Baie de Cooks</h3>
+                <p>Eaux cristallines, récifs foisonnants et dauphins résidents. La rencontre avec les raies pastenagues apprivoisées reste le moment fort du séjour.</p>
+                <div class="dec_spot_infos">
+                  <span>🌊 2 – 20 m</span>
+                  <span>⭐ Intermédiaire</span>
+                  <span>🐬 Dauphins</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ACTIVITÉS -->
+        <section class="section">
+          <h2>Activités aquatiques</h2>
+          <p class="section_subtitle">Pour tous les niveaux, de la surface aux grandes profondeurs</p>
+          <div class="ui_grid ui_grid_4">
+
+            <div class="ui_card activite_card">
+              <span class="activite_icon">🤿</span>
+              <h3>Plongée bouteille</h3>
+              <p>Explorez tombants, caves et épaves. Des centres agréés proposent baptêmes dès 8 ans et formations PADI complètes sur place.</p>
+              <ul class="activite_details">
+                <li>Dès 0 m (baptême)</li>
+                <li>Centres certifiés PADI</li>
+                <li>Sorties matin et après-midi</li>
+              </ul>
+            </div>
+
+            <div class="ui_card activite_card">
+              <span class="activite_icon">🏊</span>
+              <h3>Snorkeling</h3>
+              <p>Masque et tuba suffisent pour observer la vie récifale. Les lagons de Moorea et Bora Bora sont parfaits même pour les non-nageurs.</p>
+              <ul class="activite_details">
+                <li>Accessible à tous</li>
+                <li>Eau à 28°C</li>
+                <li>Visibilité jusqu'à 30 m</li>
+              </ul>
+            </div>
+
+            <div class="ui_card activite_card">
+              <span class="activite_icon">🚤</span>
+              <h3>Safari lagon</h3>
+              <p>En bateau semi-rigide, visitez les spots mythiques : nourrissage de raies, rencontre avec les requins citrons, pique-nique sur motu privé.</p>
+              <ul class="activite_details">
+                <li>En groupe ou privatif</li>
+                <li>Déjeuner sur motu inclus</li>
+                <li>Guide naturaliste</li>
+              </ul>
+            </div>
+
+            <div class="activite_card">
+              <span class="activite_icon">🐋</span>
+              <h3>Swimming with whales</h3>
+              <p>De juillet à octobre uniquement, nager en liberté avec les baleines à bosse. Une expérience encadrée et profondément respectueuse.</p>
+              <ul class="activite_details">
+                <li>Juil — Octobre</li>
+                <li>Groupes de 4 max</li>
+                <li>Réservation obligatoire</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- PLANIFIER -->
+        <section class="dec_planifier section_sand section">
+          <h2>Préparer sa plongée</h2>
+          <p class="section_subtitle">Tout ce qu'il faut savoir avant de se jeter à l'eau</p>
+          <div class="ui_grid ui_grid_4">
+
+            <div class="ui_card dec_planifier_card">
+              <span class="dec_planifier_icon">📅</span>
+              <h3>Meilleure période</h3>
+              <p>Mai à octobre : eaux calmes, visibilité maximale, saison des baleines. Les mois de juillet et août sont les plus prisés.</p>
+            </div>
+
+            <div class="ui_card dec_planifier_card">
+              <span class="dec_planifier_icon">🎒</span>
+              <h3>Équipement</h3>
+              <p>Combinaison légère (3mm), masque, palmes et tuba. Tout le matériel est disponible à la location sur place dans les centres de plongée.</p>
+            </div>
+
+            <div class="ui_card dec_planifier_card">
+              <span class="dec_planifier_icon">🛡️</span>
+              <h3>Sécurité</h3>
+              <p>Plongez toujours avec un guide local certifié. Ne touchez pas les coraux et gardez une distance respectueuse avec la faune marine.</p>
+            </div>
+
+            <div class="ui_card dec_planifier_card">
+              <span class="dec_planifier_icon">📜</span>
+              <h3>Certifications</h3>
+              <p>PADI Open Water, CMAS 1 étoile ou équivalent pour la plongée autonome. Les baptêmes ne nécessitent aucune certification préalable.</p>
+            </div>
+
+          </div>
+        </section>
+
+      </article>
+      <aside></aside>
+    </main>
+
+    <footer>
+      <div class="footer_bottom">
+        <span>© 2026 Tahiti — Tous droits réservés</span>
+        <nav class="footer_nav">
+          <a href="a-propos.html">À propos de nous</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="https://github.com/panaki-gillot" target="_blank" class="github_link">
+            <svg class="github_icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.216.69.825.572C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            Panaki
+          </a>
+          <a href="https://github.com/llacote-holberton" target="_blank" class="github_link">
+            <svg class="github_icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.216.69.825.572C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            Laurent
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+  </body>
+</html>

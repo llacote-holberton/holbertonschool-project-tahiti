@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les plus belles randonnées sauvages et sentiers balisés au cœur de la nature luxuriante de Tahiti. Des parcours adaptés à tous les niveaux.">
+    <title>Explorer — Randonnées à Tahiti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/all/favicon.ico">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img class="header_logo" src="website_logo.png" alt="Logo Tahiti">
+      <nav>
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="explorer.html" class="nav_active">Explorer</a></li>
+          <li><a href="profiter.html">Profiter</a></li>
+          <li><a href="decouvrir.html">Découvrir</a></li>
+          <li><a href="savourer.html">Savourer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="explore">
+
+        <section class="hero" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%), url('assets/explorer/explorer__vue-panorama.jpg') center / cover no-repeat;">
+          <div class="hero_content">
+            <h1>Explorer Tahiti</h1>
+            <p class="hero_subtitle">Randonnées sauvages et sentiers au cœur d'une nature luxuriante</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Des sentiers pour tous les aventuriers !</h2>
+          <p class="section_subtitle">Que l'on veuille se ressourcer ou s'aventurer, découvrez des parcours adaptés à vos envies</p>
+          
+          <p>La riche topographie de Tahiti lui permet d'offrir des tracés variés dans leur intensité comme leur ambiance ! Gravissez les collines pour admirer un panorama à couper le souffle, faites semblant de vous perdre dans une forêt luxuriante, ou promenez vous simplement au bord du sable fin et de l'eau turquoise.</p>
+          <p>Nos tracés officiels sont balisés, avec une indication de la difficulté, des pistes de repli et la distance restante avant l'arrivée.</p>
+          
+          <div class="gallery">
+            <img src="assets/explorer/explorer__vue-plage-lagon.jpg" alt="Plage et lagon">
+            <img src="assets/explorer/explorer__vue-montagne.jpg" alt="Panorama montagneux">
+            <img src="assets/explorer/explorer__vue-interieur-foret.jpg" alt="Forêt tropicale">
+            <img src="assets/explorer/explorer__vue-cascade.jpg" alt="Cascade cachée">
+          </div>
+        </section>
+
+        <section class="section section_light">
+          <h2>Une fresque aux mille couleurs !</h2>
+          <p class="section_subtitle">À la rencontre d'une faune et d'une flore exceptionnelles</p>
+          
+          <p>Avec plus de 1000 espèces de plantes répertoriées, la nature luxuriante de Tahiti vous offre des tableaux chatoyants et fourmillants de détails. Plus de 6000 espèces d'animaux y vivent, vous offrant la perspective de rencontres charmantes au détour d'un écart.</p>
+          
+          <div class="gallery">
+            <img src="assets/explorer/explorer__animaux_crabe.jpg" alt="Petit crabe local">
+            <img src="assets/explorer/explorer__diversite_plantes.jpg" alt="Plantes tropicales">
+            <img src="assets/explorer/explorer__animaux_sanglier.jpg" alt="Faune sauvage">
+          </div>
+          
+          <div class="dual_column" style="display: flex; align-items: center; gap: 32px; text-align: left; margin-top: 40px;">
+            <img src="assets/explorer/explorer__fleur.jpg" alt="Fleur de Tiare" width="120px" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <p class="insider_note" style="margin: 0;">Le Tiare est LA fleur typique de Tahiti, qui se distingue par une symbolique forte due à l'élégance de sa simplicité et la senteur délicate qu'elle dégage. Outre son identité comme emblème de Tahiti, la Gardenia taitensis de son nom scientifique est utilisée comme plante médicinale, huile de massage ou simplement élément décoratif. Vous la croiserez donc souvent lors de vos pérégrinations.</p>
+          </div>
+        </section>
+
+        <section class="section section_sand">
+          <h2>Planifier ses randonnées</h2>
+          <p class="section_subtitle">Les outils indispensables pour organiser vos sorties en toute sérénité</p>
+          <div style="display: flex; justify-content: center; gap: 24px; margin-top: 30px;">
+            <a href="https://www.openrunner.com/" target="_blank" style="display: inline-block; padding: 12px 24px; background: white; color: var(--color_primary); border: 1px solid rgba(12,79,76,0.15); border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">OpenRunner (Cartographie)</a>
+            <a href="https://www.ffrandonnee.fr/randonner/conseils/bien-preparer-sa-randonnee" target="_blank" style="display: inline-block; padding: 12px 24px; background: white; color: var(--color_primary); border: 1px solid rgba(12,79,76,0.15); border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">Fédération Française de Randonnée</a>
+            <a href="https://geotrek.fr/" target="_blank" style="display: inline-block; padding: 12px 24px; background: white; color: var(--color_primary); border: 1px solid rgba(12,79,76,0.15); border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">GeoTrek app</a>
+          </div>
+        </section>
+
+      </article>
+    </main>
+    <footer>
+      <div class="footer_bottom">
+        <span>© 2026 Tahiti — Tous droits réservés</span>
+        <nav class="footer_nav">
+          <a href="a-propos.html">À propos de nous</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="https://github.com/panaki-gillot" target="_blank" class="github_link">
+            <svg class="github_icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.216.69.825.572C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            Panaki
+          </a>
+          <a href="https://github.com/llacote-holberton" target="_blank" class="github_link">
+            <svg class="github_icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.216.69.825.572C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            Laurent
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
